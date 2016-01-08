@@ -1,0 +1,70 @@
+
+<div>
+    <h2><span translate="webstoreApp.product.detail.title">Product</span> {{product.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="webstoreApp.product.name">Name</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{product.name}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="webstoreApp.product.description">Description</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{product.description}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="webstoreApp.product.stock">Stock</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{product.stock}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="webstoreApp.product.price">Price</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{product.price}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="webstoreApp.product.imageSource">ImageSource</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{product.imageSource}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="webstoreApp.product.category">category</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="productCategory.detail({id:product.category.id})">{{product.category.name}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

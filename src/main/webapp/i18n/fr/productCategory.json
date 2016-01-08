@@ -1,0 +1,22 @@
+{
+    "webstoreApp": {
+        "productCategory" : {
+            "home": {
+                "title": "ProductCategorys",
+                "createLabel": "Créer un nouveau ProductCategory",
+                "createOrEditLabel": "Créer ou éditer un ProductCategory"
+            },
+            "created": "Un nouveau ProductCategory a été créé avec l'identifiant {{ param }}",
+            "updated": "Le ProductCategory avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le ProductCategory avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le ProductCategory {{ id }} ?"
+            },
+            "detail": {
+                "title": "ProductCategory"
+            },
+            "name": "Name"
+        }
+    }
+}
+

@@ -1,0 +1,54 @@
+
+<div>
+    <h2><span translate="webstoreApp.transaction.detail.title">Transaction</span> {{transaction.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="webstoreApp.transaction.quantity">Quantity</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{transaction.quantity}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="webstoreApp.transaction.approvalStatus">ApprovalStatus</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{transaction.approvalStatus}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="webstoreApp.transaction.user">user</span>
+                </td>
+                <td>
+                    {{transaction.user.login}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="webstoreApp.transaction.product">product</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="product.detail({id:transaction.product.id})">{{transaction.product.name}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>
